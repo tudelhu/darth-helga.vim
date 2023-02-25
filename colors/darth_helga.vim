@@ -79,7 +79,7 @@ endif
 
 let s:style = &background
 
-let g:colors_name = "hybrid_material"
+let g:colors_name = "darth_helga"
 
 "}}}
 " GUI And Cterm Palettes:"{{{
@@ -98,8 +98,6 @@ let s:palette.gui.selection  = { 'dark' : s:gui_selection  , 'light' : "#bcbcbc"
 let s:palette.gui.line       = { 'dark' : s:gui_line       , 'light' : "#d0d0d0" }
 let s:palette.gui.comment    = { 'dark' : s:gui_comment    , 'light' : "#5f5f5f" }
 let s:palette.gui.red        = { 'dark' : "#cc6666"        , 'light' : "#5f0000" }
-" let s:palette.gui.orange     = { 'dark' : "#de935f"        , 'light' : "#875f00" }
-" let s:palette.gui.orange     = { 'dark' : "#e69875"        , 'light' : "#875f00" }
 let s:palette.gui.orange     = { 'dark' : "#e6a373"        , 'light' : "#875f00" }
 let s:palette.gui.yellow     = { 'dark' : "#f0c674"        , 'light' : "#5f5f00" }
 let s:palette.gui.green      = { 'dark' : "#b5bd68"        , 'light' : "#005f00" }
@@ -107,7 +105,6 @@ let s:palette.gui.aqua       = { 'dark' : "#8abeb7"        , 'light' : "#005f5f"
 let s:palette.gui.blue       = { 'dark' : "#81a2be"        , 'light' : "#00005f" }
 let s:palette.gui.purple     = { 'dark' : "#b294bb"        , 'light' : "#5f005f" }
 let s:palette.gui.window     = { 'dark' : s:gui_selection  , 'light' : "#9e9e9e" }
-" let s:palette.gui.darkcolumn = { 'dark' : "#1c1c1c"        , 'light' : "#808080" }
 let s:palette.gui.darkcolumn = { 'dark' : "#1f292e"        , 'light' : "#808080" }
 let s:palette.gui.addbg      = { 'dark' : "#5F875F"        , 'light' : "#d7ffd7" }
 let s:palette.gui.addfg      = { 'dark' : "#d7ffaf"        , 'light' : "#005f00" }
@@ -362,8 +359,12 @@ exe "hi! Normal"        .s:fg_foreground  .s:normal_bg      .s:fmt_none
 "}}}
 " CoC: "{{{
 " ----------------------------------------------------------------------------
-exe "hi! CocInlayHint "   .s:fg_selection   .s:bg_none        .s:fg_italic
-exe "hi! CocListFgRed "   .s:fg_red         .s:bg_none        .s:fmt_none
+exe "hi! CocInlayHint"    .s:fg_selection   .s:bg_none        .s:fg_italic
+exe "hi! CocErrorSign"    .s:fg_red         .s:bg_none        .s:fmt_none
+exe "hi! CocHintSign"     .s:fg_aqua        .s:bg_none        .s:fmt_none
+exe "hi! CocInfoSign"     .s:fg_yellow      .s:bg_none        .s:fmt_none
+exe "hi! CocWarningSign"  .s:fg_orange      .s:bg_none        .s:fmt_none
+exe "hi! CocSearch"       .s:fg_blue        .s:bg_none        .s:fmt_none
 
 "}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
