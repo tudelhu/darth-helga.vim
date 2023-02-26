@@ -367,6 +367,13 @@ exe "hi! CocWarningSign"  .s:fg_orange      .s:bg_none        .s:fmt_none
 exe "hi! CocSearch"       .s:fg_blue        .s:bg_none        .s:fmt_none
 
 "}}}
+" JSX: "{{{
+" ----------------------------------------------------------------------------
+exe "hi! jsxAttrib"       .s:fg_orange      .s:bg_none        .s:fmt_none
+exe "hi! jsxTagName"      .s:fg_yellow      .s:bg_none        .s:fmt_bold
+exe "hi! jsxComponentName" .s:fg_blue       .s:bg_none        .s:fmt_bold
+
+"}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
 " ----------------------------------------------------------------------------
 exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fg_italic
@@ -395,9 +402,9 @@ exe "hi! PreProc"         .s:fg_aqua        .s:bg_none        .s:fmt_none
 "   Macro"
 "   PreCondit"
 
-exe "hi! Type"            .s:fg_orange      .s:bg_none        .s:fmt_none
+exe "hi! Type"            .s:fg_blue        .s:bg_none        .s:fmt_none
 "   StorageClass"
-exe "hi! Structure"       .s:fg_aqua        .s:bg_none        .s:fmt_none
+exe "hi! Structure"       .s:fg_blue        .s:bg_none        .s:fmt_none
 "   Typedef"
 
 exe "hi! Special"         .s:fg_red         .s:bg_none        .s:fmt_none
