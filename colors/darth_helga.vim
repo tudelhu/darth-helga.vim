@@ -374,6 +374,12 @@ exe "hi! jsxTagName"      .s:fg_yellow      .s:bg_none        .s:fmt_bold
 exe "hi! jsxComponentName" .s:fg_blue       .s:bg_none        .s:fmt_bold
 
 "}}}
+" Tabline: "{{{
+exe "hi! TabLine"         .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_none
+exe "hi! TabLineFill"     .s:fg_none        .s:bg_darkcolumn  .s:fmt_none
+exe "hi! TabLineSel"      .s:fg_aqua        .s:bg_background  .s:fmt_bold
+
+"}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
 " ----------------------------------------------------------------------------
 exe "hi! Comment"         .s:fg_comment     .s:bg_none        .s:fg_italic
