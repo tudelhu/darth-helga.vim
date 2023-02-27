@@ -330,9 +330,9 @@ exe "hi! SpellBad"      .s:fg_red         .s:bg_none        .s:fmt_undr
 exe "hi! SpellRare"     .s:fg_purple      .s:bg_none        .s:fmt_undr
 exe "hi! StatusLine"    .s:fg_foreground  .s:bg_selection   .s:fg_bold
 exe "hi! StatusLineNC"  .s:fg_window      .s:bg_comment     .s:fmt_none
-exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_revr
-"   TabLineFill"
-"   TabLineSel"
+exe "hi! TabLine"       .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_none
+exe "hi! TabLineFill"   .s:fg_none        .s:bg_darkcolumn  .s:fmt_none
+exe "hi! TabLineSel"    .s:fg_aqua        .s:bg_background  .s:fmt_bold
 exe "hi! Title"         .s:fg_yellow      .s:bg_none        .s:fmt_none
 exe "hi! Visual"        .s:fg_none        .s:bg_selection   .s:fmt_none
 "   VisualNos"
@@ -372,12 +372,6 @@ exe "hi! CocSearch"       .s:fg_blue        .s:bg_none        .s:fmt_none
 exe "hi! jsxAttrib"       .s:fg_orange      .s:bg_none        .s:fmt_none
 exe "hi! jsxTagName"      .s:fg_yellow      .s:bg_none        .s:fmt_bold
 exe "hi! jsxComponentName" .s:fg_blue       .s:bg_none        .s:fmt_bold
-
-"}}}
-" Tabline: "{{{
-exe "hi! TabLine"         .s:fg_foreground  .s:bg_darkcolumn  .s:fmt_none
-exe "hi! TabLineFill"     .s:fg_none        .s:bg_darkcolumn  .s:fmt_none
-exe "hi! TabLineSel"      .s:fg_aqua        .s:bg_background  .s:fmt_bold
 
 "}}}
 " Generic Syntax Highlighting: (see :help group-name)"{{{
